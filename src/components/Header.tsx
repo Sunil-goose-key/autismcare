@@ -1,0 +1,46 @@
+import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
+
+const Header = () => {
+  return (
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <div className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            🧩 AutismCare+
+          </div>
+        </div>
+        
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-8">
+          <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">
+            Features
+          </a>
+          <a href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
+            How It Works
+          </a>
+          <a href="#testimonials" className="text-sm font-medium hover:text-primary transition-colors">
+            Testimonials
+          </a>
+          <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
+            Pricing
+          </a>
+        </div>
+        
+        {/* CTA Buttons */}
+        <div className="hidden md:flex items-center gap-4">
+          <Button variant="ghost">Sign In</Button>
+          <Button variant="default">Get Started</Button>
+        </div>
+        
+        {/* Mobile Menu Button */}
+        <Button variant="ghost" size="icon" className="md:hidden">
+          <Menu className="h-6 w-6" />
+        </Button>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
