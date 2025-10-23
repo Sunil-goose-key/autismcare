@@ -14,17 +14,17 @@ const Header = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">
-            Features
+          <a href="/assessment" className="text-sm font-medium hover:text-primary transition-colors">
+            Assessment
           </a>
-          <a href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
-            How It Works
+          <a href="/professionals" className="text-sm font-medium hover:text-primary transition-colors">
+            Professionals
           </a>
-          <a href="#testimonials" className="text-sm font-medium hover:text-primary transition-colors">
-            Testimonials
+          <a href="/activities" className="text-sm font-medium hover:text-primary transition-colors">
+            Activities
           </a>
-          <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
-            Pricing
+          <a href="/community" className="text-sm font-medium hover:text-primary transition-colors">
+            Community
           </a>
         </div>
         
